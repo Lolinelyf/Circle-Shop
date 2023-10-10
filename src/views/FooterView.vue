@@ -126,7 +126,6 @@
 
   &__item {
     width: max-content;
-    font-size: 16px;
     color: var(--color-beige);
 
     & > h2 {
@@ -144,7 +143,7 @@
       & > li {
         margin: 0;
         padding: 0 0 1rem 0;
-        font-weight: 300;
+        font-weight: 400;
       }
     }
   }
