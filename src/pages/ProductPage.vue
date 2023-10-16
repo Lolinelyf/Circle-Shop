@@ -13,7 +13,7 @@ onMounted(() => {
 </script>
 
 <template>
-  <div v-if="product" :class="$style.host">
+  <div v-if="product">
     <AppProductCard v-bind="product" />
   </div>
 </template>
