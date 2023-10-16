@@ -5,8 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite",
-    "build": "vite build --base=/Circle-Shop/",
-    "preview": "vite preview --base=/Circle-Shop/",
+    "build": "vite build",
+    "preview": "vite preview",
     "lint": "eslint . --ext .vue,.js --fix --ignore-path .gitignore"
   },
   "dependencies": {
