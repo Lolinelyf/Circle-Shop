@@ -1,9 +1,13 @@
 <script setup>
 import { RouterLink } from 'vue-router';
+const BASE_URL = import.meta.env.BASE_URL;
 </script>
 
 <template>
-  <header :class="$style.host">
+  <header
+      :class="$style.host"
+      :style="{backgroundImage: `url(${BASE_URL}images/header/bg-header.png)`}"
+  >
     <div :class="$style.container">
       <div :class="$style.flex">
         <div :class="$style.anchors">
@@ -82,7 +86,7 @@ import { RouterLink } from 'vue-router';
   min-height: 1080px;
   height: 100vh;
   max-height: 1200px;
-  background: center / cover no-repeat url('images/header/bg-header.png');
+  background: center / cover no-repeat;
 }
 
 .container {

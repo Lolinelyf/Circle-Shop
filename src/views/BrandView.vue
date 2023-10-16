@@ -1,22 +1,26 @@
+<script setup>
+const BASE_URL = import.meta.env.BASE_URL;
+</script>
+
 <template>
   <div :class="$style.brand">
     <div :class="$style.container">
       <div :class="$style.brand__top">
-        <img src="images/brand/s2-1.png" alt="" :class="$style.brand__img" />
+        <img :src="BASE_URL + 'images/brand/s2-1.png'" alt="" :class="$style.brand__img" />
         <h2 :class="$style.brand__word">Branding</h2>
-        <img src="images/brand/s2-2.png" alt="" :class="$style.brand__img" />
+        <img :src="BASE_URL + 'images/brand/s2-2.png'" alt="" :class="$style.brand__img" />
       </div>
       <hr :class="$style.brand__line" />
       <div :class="$style.brand__center">
         <h2 :class="$style.brand__word">Digital</h2>
-        <img src="images/brand/s2-3.png" alt="" :class="$style.brand__img" />
+        <img :src="BASE_URL + 'images/brand/s2-3.png'" alt="" :class="$style.brand__img" />
         <h2 :class="$style.brand__word">Design</h2>
       </div>
       <hr :class="$style.brand__line" />
       <div :class="$style.brand__bottom">
-        <img src="images/brand/s2-4.png" alt="" :class="$style.brand__img" />
+        <img :src="BASE_URL + 'images/brand/s2-4.png'" alt="" :class="$style.brand__img" />
         <h2 :class="$style.brand__word">Storytelling</h2>
-        <img src="images/brand/s2-5.png" alt="" :class="$style.brand__img" />
+        <img :src="BASE_URL + 'images/brand/s2-5.png'" alt="" :class="$style.brand__img" />
       </div>
     </div>
   </div>
