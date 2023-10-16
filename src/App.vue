@@ -1,5 +1,5 @@
 <script setup>
-// import { RouterView } from 'vue-router';
+import { RouterView } from 'vue-router';
 
 import HeaderView from './views/HeaderView.vue';
 import FooterView from './views/FooterView.vue';
@@ -17,7 +17,7 @@ import SaleView from './views/SaleView.vue';
     <BrandView />
     <CategoriesView />
     <SaleView />
-    <!-- <RouterView /> -->
+    <RouterView />
   </main>
   <FooterView />
   <ToastsView />
