@@ -3,7 +3,11 @@ module.exports = {
     browser: true,
     es2021: true,
   },
-  extends: ['airbnb-base', 'plugin:vue/vue3-recommended'],
+  extends: [
+    'airbnb-base',
+    'plugin:vue/vue3-recommended',
+    'plugin:prettier/recommended',
+  ],
   overrides: [
     {
       env: {
@@ -25,5 +29,11 @@ module.exports = {
     'import/prefer-default-export': 'off',
     'no-use-before-define': 'off',
     'max-len': ['error', { ignorePattern: 'd="([\\s\\S]*?)"' }],
+    'prettier/prettier': [
+      'warn',
+      {
+        endOfLine: 'auto',
+      },
+    ],
   },
 };
