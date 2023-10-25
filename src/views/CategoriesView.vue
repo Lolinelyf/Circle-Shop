@@ -84,7 +84,7 @@ function showMore() {
     font-weight: 600;
     text-transform: uppercase;
     color: var(--color-dark-beige);
-    transition: 1s;
+    transition: 0.15s;
 
     &:focus-visible {
       outline: none;
@@ -92,7 +92,12 @@ function showMore() {
 
     &:hover {
       color: #e9d2d2;
-      letter-spacing: 4px;
+      // opacity: 0.8;
+      filter: contrast(120%);
+    }
+
+    &:active {
+      opacity: 0.6;
     }
   }
 }
@@ -105,5 +110,17 @@ function showMore() {
 }
 .category {
   flex: 0 0 calc((100% - 12rem) / 4);
+}
+</style>
+
+<style>
+.list-enter-active,
+.list-leave-active {
+  transition: all 0.5s ease;
+}
+.list-enter-from,
+.list-leave-to {
+  opacity: 0;
+  transform: translateX(30px);
 }
 </style>

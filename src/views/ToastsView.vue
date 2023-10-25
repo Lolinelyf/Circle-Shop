@@ -19,17 +19,23 @@ const store = useToastsStore();
   </Transition>
 </template>
 
-<style module>
+<style module lang="scss">
 .host {
   position: fixed;
   bottom: 8px;
   left: 8px;
   right: 8px;
   z-index: var(--z-toast);
+
+  &__asd {
+    
+  }
 }
 
 .transitionActive {
-  transition: transform 0.25s ease, opacity 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    opacity 0.25s ease;
 }
 
 .transitionEdge {
